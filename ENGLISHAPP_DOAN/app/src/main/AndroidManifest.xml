@@ -18,6 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.englishapp.BatQuiTac.BatQuiTac_Activity"/>
+        <activity android:name="com.example.englishapp.NguPhap.NguPhap_Activity"/>
+        <activity android:name="com.example.englishapp.DanhSachTu.DanhSachTu_Activity"/>
+        <activity android:name="com.example.englishapp.caidat.CaiDat_Activity"/>
     </application>
 
 </manifest>
