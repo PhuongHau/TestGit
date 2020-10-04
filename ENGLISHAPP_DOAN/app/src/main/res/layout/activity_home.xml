@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/danhsachtu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="English App"
+        android:background="@color/background"
+        android:textColor="@color/chutrang"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        >
+    </TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/Layoutbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/rowCource1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="100dp">
+
+                    <Button
+                        android:id="@+id/btnluyentu"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:text="Luyện từ"
+                        android:background="@drawable/luyentu"
+                        />
+                    <Button
+                        android:id="@+id/btntudien"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:text="Từ điển"
+                        android:background="@drawable/tudien"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/rowCource2"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/rowCource1"
+                    android:layout_height="100dp">
+
+                    <Button
+                        android:id="@+id/btnbatquitac"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:text="bất qui tắc"
+                        android:background="@drawable/luyenchu"
+                        />
+                    <Button
+                        android:id="@+id/btnnguphap"
+
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:text="Ngữ pháp"
+                        android:background="@drawable/kiemtra"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rowCource3"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/rowCource2"
+                    android:layout_height="100dp">
+
+                    <Button
+                        android:id="@+id/btndanhsach"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:text="Danh sách từ"
+                        android:background="@drawable/danhsach"
+                        />
+                    <Button
+                        android:id="@+id/btncaidat"
+
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:text="Cài đặt"
+                        android:background="@drawable/caidat"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/home_btnthoat"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thoát"
+                android:layout_below="@id/Layoutbtn"
+                />
+            <Button
+                android:id="@+id/home_btncauhoinangcao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bật câu hỏi ngẫu nhiên"
+                android:layout_below="@id/home_btnthoat"
+
+                />
+            <TextView
+                android:id="@+id/txtbaomat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/baomat"
+                android:gravity="center"
+                android:layout_below="@id/home_btncauhoinangcao"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
