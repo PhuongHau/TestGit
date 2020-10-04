@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chutrang"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Động Từ Bất Quy Tắc"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:background="@color/background"
+        android:textColor="@color/chutrang"
+        ></TextView>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/batquitac_search"
+        android:focusable="false"
+        android:searchIcon="@android:drawable/ic_menu_search"
+        android:queryHint="Nhập từ khoá"
+        android:background="@color/background"
+        />
+
+    <TableLayout
+        android:background="@drawable/border"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TableRow
+            android:background="#27ae60"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            >
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Nguyên thể"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/chutrang"
+                android:layout_weight="1">
+            </TextView>
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Quá Khứ"
+                android:textStyle="bold"
+                android:textColor="@color/chutrang"
+                android:textSize="18dp"
+                android:layout_weight="1">
+            </TextView>
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/chutrang"
+                android:text="QKPT"
+                android:textSize="18dp"
+                android:layout_weight="1">
+            </TextView>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/batquitac_rview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>
