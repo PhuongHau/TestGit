@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh Sách Chương"
+        android:textSize="25sp"
+        android:background="@color/background"
+        android:textColor="@color/chutrang"
+        android:gravity="center"></TextView>
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnnouns"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/chutrang"
+                android:background="@drawable/radius"
+                android:text="Unit 1. Nouns"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+            </Button>
+            <Button
+                android:id="@+id/btnphatam"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/chutrang"
+                android:background="@drawable/radius"
+                android:text="Unit 2. Pronouns"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+            </Button>
+            <Button
+                android:id="@+id/btndongtu"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/chutrang"
+                android:background="@drawable/radius"
+                android:text="Unit 3. Verbs"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+            </Button>
+            <Button
+                android:id="@+id/btnthihientaidon"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/chutrang"
+                android:background="@drawable/radius"
+                android:text="Unit 4. Simple Present"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+            </Button>
+            <Button
+                android:id="@+id/btnthihientaihoanthanh"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/chutrang"
+                android:background="@drawable/radius"
+                android:text="Unit 5. Present Perfect"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+            </Button>
+            <Button
+                android:id="@+id/btnthihientaihoanthanhtiepdien"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/chutrang"
+                android:background="@drawable/radius"
+                android:text="Unit 6.  Present Perfect Continuous"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+            </Button>
+            <Button
+                android:id="@+id/btnthihientaitiepdien"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/chutrang"
+                android:background="@drawable/radius"
+                android:text="Unit 7. Simple Past"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
