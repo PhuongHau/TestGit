@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Động Từ Bất Quy Tắc"
-        android:textSize="26sp"
+        android:textSize="20sp"
         android:gravity="center"
         android:background="@color/background"
         android:textColor="@color/chutrang"
