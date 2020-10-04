@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#3165ff</color>
+    <color name="colorPrimaryDark">#3165ff</color>
+    <color name="colorAccent">#3165ff</color>
+    <color name="xanhnen">#5db0ff3b</color>
+    <color name="background">#4cd137</color>
+    <color name="chutrang">#fff</color>
+    <color name="chuden">#000</color>
+    <color name="nen">#546de5</color>
+    <color name="chudo">#F44336</color>
+    <color name="chuxam">#A8A8A1</color>
+    <color name="chuvang">#F4BB0F</color>
+    <color name="chuvangsang">#FDEA3A</color>
 </resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F8F4F8"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tudien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Từ Điển"
+        android:background="@color/background"
+        android:textColor="@color/chutrang"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        >
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="wrap_content">
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tudien_search"
+            android:focusable="false"
+            android:queryHint="Nhập từ khoá"
+            android:iconifiedByDefault="false"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tudien_txtketqua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Kết quả tìm kiếm:"
+                android:textSize="18dp"
+                android:textColor="#FF1403"
+                />
+            <TextView
+                android:id="@+id/tudien_ketqua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="......."
+                android:textSize="22dp"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:id="@+id/tudien_txtnghia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:textColor="@color/chuden"
+                android:text="Nghĩa:"
+                android:textSize="18dp"
+
+                />
+            <TextView
+                android:id="@+id/tudien_nghia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="..."
+                android:textSize="18dp"
+                android:textColor="@color/chuden"
+                />
+            <TextView
+                android:id="@+id/tudien_txtvidu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textStyle="italic"
+                android:textColor="@color/chuden"
+                android:text="ví dụ:"
+                android:textSize="18dp"
+
+                />
+            <TextView
+                android:id="@+id/tudien_vidu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="..."
+                android:textSize="18dp"
+                android:textColor="#000000"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
